@@ -1,0 +1,19 @@
+E:\mvn\COST VB\COST VB\bin\Debug\COST VB.exe.config
+E:\mvn\COST VB\COST VB\bin\Debug\COST VB.exe
+E:\mvn\COST VB\COST VB\bin\Debug\COST VB.pdb
+E:\mvn\COST VB\COST VB\bin\Debug\COST VB.xml
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.MenuA.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.stocks.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Login.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Resources.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST VB.vbproj.GenerateResource.Cache
+E:\mvn\COST VB\COST VB\obj\Debug\COST VB.exe
+E:\mvn\COST VB\COST VB\obj\Debug\COST VB.xml
+E:\mvn\COST VB\COST VB\obj\Debug\COST VB.pdb
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Splash.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST VB.vbprojResolveAssemblyReference.cache
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Admin.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Customers.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Orders.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Sales.resources
+E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Suppliers.resources

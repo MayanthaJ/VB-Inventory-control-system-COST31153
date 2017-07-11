@@ -17,3 +17,26 @@ E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Customers.resources
 E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Orders.resources
 E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Sales.resources
 E:\mvn\COST VB\COST VB\obj\Debug\COST_VB.Suppliers.resources
+D:\copy\COST VB\COST VB\bin\Debug\COST VB.exe.config
+D:\copy\COST VB\COST VB\obj\Debug\COST VB.exe
+D:\copy\COST VB\COST VB\obj\Debug\COST VB.xml
+D:\copy\COST VB\COST VB\obj\Debug\COST VB.pdb
+D:\copy\COST VB\COST VB\bin\Debug\COST VB.exe
+D:\copy\COST VB\COST VB\bin\Debug\COST VB.pdb
+D:\copy\COST VB\COST VB\bin\Debug\COST VB.xml
+D:\copy\COST VB\COST VB\obj\Debug\COST VB.vbprojResolveAssemblyReference.cache
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Admin.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Customers.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.MenuA.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Orders.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Sales.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.stocks.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Login.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Suppliers.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Resources.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST_VB.Splash.resources
+D:\copy\COST VB\COST VB\obj\Debug\COST VB.vbproj.GenerateResource.Cache
+E:\mvn\VB\COST VB\COST VB\bin\Debug\COST VB.exe.config
+E:\mvn\VB\COST VB\COST VB\obj\Debug\COST VB.exe
+E:\mvn\VB\COST VB\COST VB\obj\Debug\COST VB.xml
+E:\mvn\VB\COST VB\COST VB\obj\Debug\COST VB.pdb

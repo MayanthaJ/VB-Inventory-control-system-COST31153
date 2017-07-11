@@ -39,7 +39,7 @@ Partial Class Login
         Me.label4.AutoSize = True
         Me.label4.BackColor = System.Drawing.Color.Transparent
         Me.label4.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label4.ForeColor = System.Drawing.Color.White
+        Me.label4.ForeColor = System.Drawing.Color.Gray
         Me.label4.Location = New System.Drawing.Point(170, 132)
         Me.label4.Name = "label4"
         Me.label4.Size = New System.Drawing.Size(145, 37)
@@ -76,7 +76,7 @@ Partial Class Login
         Me.label2.AutoSize = True
         Me.label2.BackColor = System.Drawing.Color.Transparent
         Me.label2.Font = New System.Drawing.Font("Segoe UI Emoji", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.label2.ForeColor = System.Drawing.Color.Gray
         Me.label2.Location = New System.Drawing.Point(82, 256)
         Me.label2.Name = "label2"
         Me.label2.Size = New System.Drawing.Size(85, 21)
@@ -88,7 +88,7 @@ Partial Class Login
         Me.label1.AutoSize = True
         Me.label1.BackColor = System.Drawing.Color.Transparent
         Me.label1.Font = New System.Drawing.Font("Segoe UI Emoji", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.label1.ForeColor = System.Drawing.Color.Gray
         Me.label1.Location = New System.Drawing.Point(82, 217)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(89, 21)
@@ -99,12 +99,12 @@ Partial Class Login
         '
         Me.loginBtn.BackColor = System.Drawing.Color.DimGray
         Me.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.loginBtn.Font = New System.Drawing.Font("Adobe Fan Heiti Std B", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loginBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.loginBtn.ForeColor = System.Drawing.Color.White
         Me.loginBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.loginBtn.Location = New System.Drawing.Point(177, 300)
         Me.loginBtn.Name = "loginBtn"
-        Me.loginBtn.Size = New System.Drawing.Size(179, 27)
+        Me.loginBtn.Size = New System.Drawing.Size(179, 36)
         Me.loginBtn.TabIndex = 8
         Me.loginBtn.Text = "Log in"
         Me.loginBtn.UseVisualStyleBackColor = False
@@ -131,9 +131,9 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.COST_VB.My.Resources.Resources._751
+        Me.BackgroundImage = Global.COST_VB.My.Resources.Resources._7511
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(464, 398)
+        Me.ClientSize = New System.Drawing.Size(464, 436)
         Me.Controls.Add(Me.label4)
         Me.Controls.Add(Me.label3)
         Me.Controls.Add(Me.pictureBox1)

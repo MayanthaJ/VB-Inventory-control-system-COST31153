@@ -31,7 +31,7 @@
         Me.Close()
     End Sub
 
-    Private Sub pictureBox3_Click(sender As Object, e As EventArgs) Handles pictureBox3.Click
+    Private Sub pictureBox3_Click(sender As Object, e As EventArgs)
         Sales.Show()
         Me.Close()
     End Sub
@@ -39,5 +39,9 @@
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
         Admin.Show()
         Me.Close()
+    End Sub
+
+    Private Sub MenuA_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

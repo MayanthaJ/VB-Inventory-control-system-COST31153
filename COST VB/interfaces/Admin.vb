@@ -14,4 +14,12 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub stockCreatedDate_Click(sender As Object, e As EventArgs) Handles stockCreatedDate.Click
+
+    End Sub
 End Class

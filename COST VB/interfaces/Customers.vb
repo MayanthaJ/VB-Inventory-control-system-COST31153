@@ -14,4 +14,12 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Customers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub stockCreatedDate_Click(sender As Object, e As EventArgs) Handles stockCreatedDate.Click
+
+    End Sub
 End Class

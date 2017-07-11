@@ -25,20 +25,14 @@ Partial Class Suppliers
         Me.searchBox = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.stockCreatedDate = New System.Windows.Forms.Label()
-        Me.stockUpdatedDate = New System.Windows.Forms.Label()
-        Me.stockPublisher = New System.Windows.Forms.ComboBox()
-        Me.stockAuthor = New System.Windows.Forms.ComboBox()
-        Me.stockType_view_drop = New System.Windows.Forms.ComboBox()
         Me.stockID_view = New System.Windows.Forms.Label()
         Me.stockQuantity = New System.Windows.Forms.TextBox()
         Me.stockTitle = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -50,6 +44,10 @@ Partial Class Suppliers
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.pictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.addBtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.editBtn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,10 +62,10 @@ Partial Class Suppliers
         '
         Me.searchBox.BackColor = System.Drawing.Color.White
         Me.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.searchBox.Font = New System.Drawing.Font("Oswald", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchBox.Location = New System.Drawing.Point(150, 245)
+        Me.searchBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchBox.Location = New System.Drawing.Point(110, 247)
         Me.searchBox.Name = "searchBox"
-        Me.searchBox.Size = New System.Drawing.Size(179, 25)
+        Me.searchBox.Size = New System.Drawing.Size(179, 21)
         Me.searchBox.TabIndex = 75
         '
         'TableLayoutPanel1
@@ -75,7 +73,7 @@ Partial Class Suppliers
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(36, 308)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(35, 311)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -86,182 +84,119 @@ Partial Class Suppliers
         '
         Me.stockCreatedDate.AutoSize = True
         Me.stockCreatedDate.BackColor = System.Drawing.Color.Transparent
-        Me.stockCreatedDate.Font = New System.Drawing.Font("Oswald", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockCreatedDate.Location = New System.Drawing.Point(482, 190)
+        Me.stockCreatedDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stockCreatedDate.Location = New System.Drawing.Point(482, 163)
         Me.stockCreatedDate.Name = "stockCreatedDate"
-        Me.stockCreatedDate.Size = New System.Drawing.Size(50, 20)
+        Me.stockCreatedDate.Size = New System.Drawing.Size(35, 16)
         Me.stockCreatedDate.TabIndex = 69
-        Me.stockCreatedDate.Text = "Stock ID"
-        '
-        'stockUpdatedDate
-        '
-        Me.stockUpdatedDate.AutoSize = True
-        Me.stockUpdatedDate.BackColor = System.Drawing.Color.Transparent
-        Me.stockUpdatedDate.Font = New System.Drawing.Font("Oswald", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockUpdatedDate.Location = New System.Drawing.Point(481, 157)
-        Me.stockUpdatedDate.Name = "stockUpdatedDate"
-        Me.stockUpdatedDate.Size = New System.Drawing.Size(50, 20)
-        Me.stockUpdatedDate.TabIndex = 68
-        Me.stockUpdatedDate.Text = "Stock ID"
-        '
-        'stockPublisher
-        '
-        Me.stockPublisher.Font = New System.Drawing.Font("Oswald", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockPublisher.FormattingEnabled = True
-        Me.stockPublisher.Location = New System.Drawing.Point(485, 91)
-        Me.stockPublisher.Name = "stockPublisher"
-        Me.stockPublisher.Size = New System.Drawing.Size(179, 25)
-        Me.stockPublisher.TabIndex = 67
-        '
-        'stockAuthor
-        '
-        Me.stockAuthor.Font = New System.Drawing.Font("Oswald", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockAuthor.FormattingEnabled = True
-        Me.stockAuthor.Location = New System.Drawing.Point(111, 193)
-        Me.stockAuthor.Name = "stockAuthor"
-        Me.stockAuthor.Size = New System.Drawing.Size(179, 25)
-        Me.stockAuthor.TabIndex = 66
-        '
-        'stockType_view_drop
-        '
-        Me.stockType_view_drop.DropDownHeight = 150
-        Me.stockType_view_drop.Font = New System.Drawing.Font("Oswald", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockType_view_drop.FormattingEnabled = True
-        Me.stockType_view_drop.IntegralHeight = False
-        Me.stockType_view_drop.Items.AddRange(New Object() {"Childern", "Novel", "Education"})
-        Me.stockType_view_drop.Location = New System.Drawing.Point(111, 123)
-        Me.stockType_view_drop.Name = "stockType_view_drop"
-        Me.stockType_view_drop.Size = New System.Drawing.Size(179, 25)
-        Me.stockType_view_drop.TabIndex = 65
+        Me.stockCreatedDate.Text = "date"
         '
         'stockID_view
         '
         Me.stockID_view.AutoSize = True
         Me.stockID_view.BackColor = System.Drawing.Color.Transparent
-        Me.stockID_view.Font = New System.Drawing.Font("Oswald", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockID_view.Location = New System.Drawing.Point(109, 89)
+        Me.stockID_view.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stockID_view.Location = New System.Drawing.Point(143, 91)
         Me.stockID_view.Name = "stockID_view"
-        Me.stockID_view.Size = New System.Drawing.Size(50, 20)
+        Me.stockID_view.Size = New System.Drawing.Size(19, 16)
         Me.stockID_view.TabIndex = 64
-        Me.stockID_view.Text = "Stock ID"
+        Me.stockID_view.Text = "id"
         '
         'stockQuantity
         '
         Me.stockQuantity.BackColor = System.Drawing.Color.White
         Me.stockQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.stockQuantity.Font = New System.Drawing.Font("Oswald", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockQuantity.Location = New System.Drawing.Point(485, 122)
+        Me.stockQuantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stockQuantity.Location = New System.Drawing.Point(146, 192)
         Me.stockQuantity.Name = "stockQuantity"
-        Me.stockQuantity.Size = New System.Drawing.Size(179, 25)
+        Me.stockQuantity.Size = New System.Drawing.Size(179, 21)
         Me.stockQuantity.TabIndex = 63
         '
         'stockTitle
         '
         Me.stockTitle.BackColor = System.Drawing.Color.White
         Me.stockTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.stockTitle.Font = New System.Drawing.Font("Oswald", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockTitle.Location = New System.Drawing.Point(111, 158)
+        Me.stockTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stockTitle.Location = New System.Drawing.Point(146, 156)
         Me.stockTitle.Name = "stockTitle"
-        Me.stockTitle.Size = New System.Drawing.Size(179, 25)
+        Me.stockTitle.Size = New System.Drawing.Size(179, 21)
         Me.stockTitle.TabIndex = 62
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(354, 190)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(354, 158)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(89, 24)
+        Me.Label9.Size = New System.Drawing.Size(105, 20)
         Me.Label9.TabIndex = 60
         Me.Label9.Text = "Created Date"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(354, 157)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(94, 24)
-        Me.Label8.TabIndex = 59
-        Me.Label8.Text = "Updated Date"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(28, 121)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(39, 24)
+        Me.Label7.Size = New System.Drawing.Size(51, 20)
         Me.Label7.TabIndex = 58
-        Me.Label7.Text = "Type"
+        Me.Label7.Text = "Name"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(29, 157)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 24)
+        Me.Label6.Size = New System.Drawing.Size(68, 20)
         Me.Label6.TabIndex = 57
-        Me.Label6.Text = "Title"
+        Me.Label6.Text = "Address"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(29, 191)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(361, 87)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 24)
+        Me.Label5.Size = New System.Drawing.Size(0, 20)
         Me.Label5.TabIndex = 56
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(28, 190)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(354, 89)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 24)
+        Me.Label4.Size = New System.Drawing.Size(55, 20)
         Me.Label4.TabIndex = 55
-        Me.Label4.Text = "Author"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(354, 89)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 24)
-        Me.Label3.TabIndex = 54
-        Me.Label3.Text = "Publisher"
+        Me.Label4.Text = "Phone"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(354, 121)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(31, 191)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 24)
+        Me.Label2.Size = New System.Drawing.Size(63, 20)
         Me.Label2.TabIndex = 53
-        Me.Label2.Text = "Quantity"
+        Me.Label2.Text = "Reg No"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Oswald", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(28, 89)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 24)
+        Me.Label1.Size = New System.Drawing.Size(88, 20)
         Me.Label1.TabIndex = 52
-        Me.Label1.Text = "Stock ID"
+        Me.Label1.Text = "Supplier ID"
         '
         'PictureBox2
         '
@@ -269,7 +204,7 @@ Partial Class Suppliers
         Me.PictureBox2.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Document_100
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Location = New System.Drawing.Point(443, 242)
+        Me.PictureBox2.Location = New System.Drawing.Point(403, 244)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(27, 29)
         Me.PictureBox2.TabIndex = 78
@@ -281,7 +216,7 @@ Partial Class Suppliers
         Me.addBtn.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Plus_96
         Me.addBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.addBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.addBtn.Location = New System.Drawing.Point(403, 242)
+        Me.addBtn.Location = New System.Drawing.Point(363, 244)
         Me.addBtn.Name = "addBtn"
         Me.addBtn.Size = New System.Drawing.Size(27, 29)
         Me.addBtn.TabIndex = 74
@@ -293,7 +228,7 @@ Partial Class Suppliers
         Me.editBtn.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Edit_100
         Me.editBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.editBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.editBtn.Location = New System.Drawing.Point(484, 242)
+        Me.editBtn.Location = New System.Drawing.Point(444, 244)
         Me.editBtn.Name = "editBtn"
         Me.editBtn.Size = New System.Drawing.Size(27, 29)
         Me.editBtn.TabIndex = 73
@@ -305,7 +240,7 @@ Partial Class Suppliers
         Me.deleteBtn.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Delete_File_96
         Me.deleteBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.deleteBtn.Location = New System.Drawing.Point(525, 242)
+        Me.deleteBtn.Location = New System.Drawing.Point(485, 244)
         Me.deleteBtn.Name = "deleteBtn"
         Me.deleteBtn.Size = New System.Drawing.Size(27, 29)
         Me.deleteBtn.TabIndex = 72
@@ -317,7 +252,7 @@ Partial Class Suppliers
         Me.searchBtn.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Search_Filled_100
         Me.searchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.searchBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.searchBtn.Location = New System.Drawing.Point(338, 242)
+        Me.searchBtn.Location = New System.Drawing.Point(298, 244)
         Me.searchBtn.Name = "searchBtn"
         Me.searchBtn.Size = New System.Drawing.Size(27, 29)
         Me.searchBtn.TabIndex = 71
@@ -327,10 +262,10 @@ Partial Class Suppliers
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Oswald", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(29, 33)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(246, 40)
+        Me.Label10.Size = New System.Drawing.Size(296, 31)
         Me.Label10.TabIndex = 108
         Me.Label10.Text = "Supplier Management"
         '
@@ -341,7 +276,7 @@ Partial Class Suppliers
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.COST_VB.My.Resources.Resources.icons8_Back_Arrow_104
         Me.PictureBox1.InitialImage = Global.COST_VB.My.Resources.Resources.icons8_Exit_64
-        Me.PictureBox1.Location = New System.Drawing.Point(568, 48)
+        Me.PictureBox1.Location = New System.Drawing.Point(568, 39)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(28, 25)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -355,7 +290,7 @@ Partial Class Suppliers
         Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox8.Image = Global.COST_VB.My.Resources.Resources.icons8_Exit_64
         Me.PictureBox8.InitialImage = Global.COST_VB.My.Resources.Resources.icons8_Exit_64
-        Me.PictureBox8.Location = New System.Drawing.Point(602, 48)
+        Me.PictureBox8.Location = New System.Drawing.Point(602, 39)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(28, 25)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -367,20 +302,65 @@ Partial Class Suppliers
         Me.pictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pictureBox6.Image = Global.COST_VB.My.Resources.Resources.icons8_Logout_Rounded_Up_Filled_50__1_
-        Me.pictureBox6.Location = New System.Drawing.Point(636, 48)
+        Me.pictureBox6.Location = New System.Drawing.Point(636, 39)
         Me.pictureBox6.Name = "pictureBox6"
         Me.pictureBox6.Size = New System.Drawing.Size(28, 25)
         Me.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pictureBox6.TabIndex = 109
         Me.pictureBox6.TabStop = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(146, 121)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(179, 21)
+        Me.TextBox1.TabIndex = 112
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.White
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(485, 88)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(179, 21)
+        Me.TextBox2.TabIndex = 113
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.White
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(485, 122)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(179, 21)
+        Me.TextBox3.TabIndex = 115
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(354, 122)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(96, 20)
+        Me.Label3.TabIndex = 114
+        Me.Label3.Text = "Work Phone"
+        '
         'Suppliers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.COST_VB.My.Resources.Resources._751
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(856, 536)
+        Me.BackgroundImage = Global.COST_VB.My.Resources.Resources._7511
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(732, 536)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.pictureBox6)
@@ -393,20 +373,14 @@ Partial Class Suppliers
         Me.Controls.Add(Me.searchBtn)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.stockCreatedDate)
-        Me.Controls.Add(Me.stockUpdatedDate)
-        Me.Controls.Add(Me.stockPublisher)
-        Me.Controls.Add(Me.stockAuthor)
-        Me.Controls.Add(Me.stockType_view_drop)
         Me.Controls.Add(Me.stockID_view)
         Me.Controls.Add(Me.stockQuantity)
         Me.Controls.Add(Me.stockTitle)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Suppliers"
@@ -433,24 +407,22 @@ Partial Class Suppliers
     Friend WithEvents searchBtn As PictureBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents stockCreatedDate As Label
-    Friend WithEvents stockUpdatedDate As Label
-    Friend WithEvents stockPublisher As ComboBox
-    Friend WithEvents stockAuthor As ComboBox
-    Friend WithEvents stockType_view_drop As ComboBox
     Friend WithEvents stockID_view As Label
     Private WithEvents stockQuantity As TextBox
     Private WithEvents stockTitle As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label10 As Label
     Private WithEvents PictureBox1 As PictureBox
     Private WithEvents PictureBox8 As PictureBox
     Private WithEvents pictureBox6 As PictureBox
+    Private WithEvents TextBox1 As TextBox
+    Private WithEvents TextBox2 As TextBox
+    Private WithEvents TextBox3 As TextBox
+    Friend WithEvents Label3 As Label
 End Class

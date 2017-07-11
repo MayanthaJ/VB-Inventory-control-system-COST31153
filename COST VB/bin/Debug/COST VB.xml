@@ -32,6 +32,11 @@ COST VB
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:COST_VB.My.Resources.Resources._7511">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:COST_VB.My.Resources.Resources.icons8_Back_Arrow_104">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

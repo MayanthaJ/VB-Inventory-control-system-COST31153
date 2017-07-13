@@ -74,3 +74,4 @@ E:\mvn\VB\COST VB\COST VB\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFacto
 E:\mvn\VB\COST VB\COST VB\bin\Debug\ShockwaveFlashObjects.dll
 E:\mvn\VB\COST VB\COST VB\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\mvn\VB\COST VB\COST VB\bin\Debug\stdole.dll
+E:\mvn\VB\COST VB\COST VB\obj\Debug\COST_VB.Form1.resources

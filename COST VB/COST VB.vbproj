@@ -93,6 +93,12 @@
     <Compile Include="interfaces\Customers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="interfaces\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="interfaces\MenuA.Designer.vb">
       <DependentUpon>MenuA.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,12 @@
     <Compile Include="interfaces\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\Suppliers.Designer.vb">
       <DependentUpon>Suppliers.vb</DependentUpon>
@@ -165,6 +177,9 @@
     <EmbeddedResource Include="interfaces\Customers.resx">
       <DependentUpon>Customers.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="interfaces\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="interfaces\MenuA.resx">
       <DependentUpon>MenuA.vb</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +194,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="interfaces\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Suppliers.resx">
       <DependentUpon>Suppliers.vb</DependentUpon>

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class stocks
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class stocks
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -29,7 +29,6 @@ Partial Class stocks
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.stockTitle = New System.Windows.Forms.TextBox()
@@ -38,14 +37,11 @@ Partial Class stocks
         Me.stockType_view_drop = New System.Windows.Forms.ComboBox()
         Me.stockAuthor = New System.Windows.Forms.ComboBox()
         Me.stockPublisher = New System.Windows.Forms.ComboBox()
-        Me.stockUpdatedDate = New System.Windows.Forms.Label()
         Me.stockCreatedDate = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.searchBtn = New System.Windows.Forms.PictureBox()
-        Me.deleteBtn = New System.Windows.Forms.PictureBox()
         Me.editBtn = New System.Windows.Forms.PictureBox()
         Me.addBtn = New System.Windows.Forms.PictureBox()
-        Me.searchBox = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pictureBox6 = New System.Windows.Forms.PictureBox()
@@ -58,14 +54,17 @@ Partial Class stocks
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.dgvData = New System.Windows.Forms.DataGridView()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         CType(Me.searchBtn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.deleteBtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.editBtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.addBtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -144,23 +143,12 @@ Partial Class stocks
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "Type"
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(355, 239)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(110, 20)
-        Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Updated Date"
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(354, 274)
+        Me.Label9.Location = New System.Drawing.Point(354, 238)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(105, 20)
         Me.Label9.TabIndex = 26
@@ -204,9 +192,8 @@ Partial Class stocks
         Me.stockID_view.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stockID_view.Location = New System.Drawing.Point(109, 99)
         Me.stockID_view.Name = "stockID_view"
-        Me.stockID_view.Size = New System.Drawing.Size(58, 16)
+        Me.stockID_view.Size = New System.Drawing.Size(0, 16)
         Me.stockID_view.TabIndex = 34
-        Me.stockID_view.Text = "Stock ID"
         '
         'stockType_view_drop
         '
@@ -238,39 +225,15 @@ Partial Class stocks
         Me.stockPublisher.Size = New System.Drawing.Size(179, 23)
         Me.stockPublisher.TabIndex = 37
         '
-        'stockUpdatedDate
-        '
-        Me.stockUpdatedDate.AutoSize = True
-        Me.stockUpdatedDate.BackColor = System.Drawing.Color.Transparent
-        Me.stockUpdatedDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockUpdatedDate.Location = New System.Drawing.Point(482, 243)
-        Me.stockUpdatedDate.Name = "stockUpdatedDate"
-        Me.stockUpdatedDate.Size = New System.Drawing.Size(58, 16)
-        Me.stockUpdatedDate.TabIndex = 38
-        Me.stockUpdatedDate.Text = "Stock ID"
-        '
         'stockCreatedDate
         '
         Me.stockCreatedDate.AutoSize = True
         Me.stockCreatedDate.BackColor = System.Drawing.Color.Transparent
         Me.stockCreatedDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stockCreatedDate.Location = New System.Drawing.Point(484, 276)
+        Me.stockCreatedDate.Location = New System.Drawing.Point(484, 240)
         Me.stockCreatedDate.Name = "stockCreatedDate"
-        Me.stockCreatedDate.Size = New System.Drawing.Size(58, 16)
+        Me.stockCreatedDate.Size = New System.Drawing.Size(0, 16)
         Me.stockCreatedDate.TabIndex = 39
-        Me.stockCreatedDate.Text = "Stock ID"
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(35, 405)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 1
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(644, 195)
-        Me.TableLayoutPanel1.TabIndex = 40
         '
         'searchBtn
         '
@@ -283,18 +246,6 @@ Partial Class stocks
         Me.searchBtn.Size = New System.Drawing.Size(27, 29)
         Me.searchBtn.TabIndex = 42
         Me.searchBtn.TabStop = False
-        '
-        'deleteBtn
-        '
-        Me.deleteBtn.BackColor = System.Drawing.Color.Transparent
-        Me.deleteBtn.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Delete_File_96
-        Me.deleteBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.deleteBtn.Location = New System.Drawing.Point(480, 336)
-        Me.deleteBtn.Name = "deleteBtn"
-        Me.deleteBtn.Size = New System.Drawing.Size(27, 29)
-        Me.deleteBtn.TabIndex = 43
-        Me.deleteBtn.TabStop = False
         '
         'editBtn
         '
@@ -320,15 +271,15 @@ Partial Class stocks
         Me.addBtn.TabIndex = 45
         Me.addBtn.TabStop = False
         '
-        'searchBox
+        'txtSearch
         '
-        Me.searchBox.BackColor = System.Drawing.Color.White
-        Me.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.searchBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchBox.Location = New System.Drawing.Point(105, 339)
-        Me.searchBox.Name = "searchBox"
-        Me.searchBox.Size = New System.Drawing.Size(179, 21)
-        Me.searchBox.TabIndex = 46
+        Me.txtSearch.BackColor = System.Drawing.Color.White
+        Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch.Location = New System.Drawing.Point(105, 339)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(179, 21)
+        Me.txtSearch.TabIndex = 46
         '
         'PictureBox2
         '
@@ -466,6 +417,32 @@ Partial Class stocks
         Me.Label14.TabIndex = 115
         Me.Label14.Text = "ISBN"
         '
+        'dgvData
+        '
+        Me.dgvData.AllowUserToAddRows = False
+        Me.dgvData.AllowUserToDeleteRows = False
+        Me.dgvData.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvData.Location = New System.Drawing.Point(34, 388)
+        Me.dgvData.Name = "dgvData"
+        Me.dgvData.ReadOnly = True
+        Me.dgvData.Size = New System.Drawing.Size(632, 248)
+        Me.dgvData.TabIndex = 117
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImage = Global.COST_VB.My.Resources.Resources.icons8_Delete_File_96
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox3.Location = New System.Drawing.Point(480, 336)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(27, 29)
+        Me.PictureBox3.TabIndex = 118
+        Me.PictureBox3.TabStop = False
+        '
         'stocks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -473,6 +450,8 @@ Partial Class stocks
         Me.BackgroundImage = Global.COST_VB.My.Resources.Resources._7511
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(733, 648)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.dgvData)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.TextBox2)
@@ -485,14 +464,11 @@ Partial Class stocks
         Me.Controls.Add(Me.pictureBox6)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.searchBox)
+        Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.addBtn)
         Me.Controls.Add(Me.editBtn)
-        Me.Controls.Add(Me.deleteBtn)
         Me.Controls.Add(Me.searchBtn)
-        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.stockCreatedDate)
-        Me.Controls.Add(Me.stockUpdatedDate)
         Me.Controls.Add(Me.stockPublisher)
         Me.Controls.Add(Me.stockAuthor)
         Me.Controls.Add(Me.stockType_view_drop)
@@ -501,7 +477,6 @@ Partial Class stocks
         Me.Controls.Add(Me.stockTitle)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -513,13 +488,14 @@ Partial Class stocks
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "stocks"
         CType(Me.searchBtn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.deleteBtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.editBtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.addBtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -531,7 +507,6 @@ Partial Class stocks
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Private WithEvents stockTitle As TextBox
@@ -540,14 +515,11 @@ Partial Class stocks
     Friend WithEvents stockType_view_drop As ComboBox
     Friend WithEvents stockAuthor As ComboBox
     Friend WithEvents stockPublisher As ComboBox
-    Friend WithEvents stockUpdatedDate As Label
     Friend WithEvents stockCreatedDate As Label
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents searchBtn As PictureBox
-    Friend WithEvents deleteBtn As PictureBox
     Friend WithEvents editBtn As PictureBox
     Friend WithEvents addBtn As PictureBox
-    Private WithEvents searchBox As TextBox
+    Private WithEvents txtSearch As TextBox
     Friend WithEvents PictureBox2 As PictureBox
     Private WithEvents PictureBox1 As PictureBox
     Private WithEvents pictureBox6 As PictureBox
@@ -560,4 +532,6 @@ Partial Class stocks
     Friend WithEvents Label13 As Label
     Private WithEvents TextBox4 As TextBox
     Friend WithEvents Label14 As Label
+    Friend WithEvents dgvData As DataGridView
+    Friend WithEvents PictureBox3 As PictureBox
 End Class

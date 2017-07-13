@@ -28,7 +28,6 @@ Partial Class Customers
         Me.editBtn = New System.Windows.Forms.PictureBox()
         Me.deleteBtn = New System.Windows.Forms.PictureBox()
         Me.searchBtn = New System.Windows.Forms.PictureBox()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.stockCreatedDate = New System.Windows.Forms.Label()
         Me.stockType_view_drop = New System.Windows.Forms.ComboBox()
         Me.stockID_view = New System.Windows.Forms.Label()
@@ -48,6 +47,7 @@ Partial Class Customers
         Me.pictureBox6 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.addBtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.editBtn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +56,7 @@ Partial Class Customers
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox2
@@ -127,18 +128,6 @@ Partial Class Customers
         Me.searchBtn.Size = New System.Drawing.Size(27, 29)
         Me.searchBtn.TabIndex = 71
         Me.searchBtn.TabStop = False
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(36, 308)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 1
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(644, 195)
-        Me.TableLayoutPanel1.TabIndex = 70
         '
         'stockCreatedDate
         '
@@ -352,6 +341,14 @@ Partial Class Customers
         Me.TextBox2.Size = New System.Drawing.Size(179, 21)
         Me.TextBox2.TabIndex = 110
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(32, 307)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(632, 196)
+        Me.DataGridView1.TabIndex = 111
+        '
         'Customers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -359,6 +356,7 @@ Partial Class Customers
         Me.BackgroundImage = Global.COST_VB.My.Resources.Resources._7511
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(721, 536)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
@@ -370,7 +368,6 @@ Partial Class Customers
         Me.Controls.Add(Me.editBtn)
         Me.Controls.Add(Me.deleteBtn)
         Me.Controls.Add(Me.searchBtn)
-        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.stockCreatedDate)
         Me.Controls.Add(Me.stockType_view_drop)
         Me.Controls.Add(Me.stockID_view)
@@ -396,6 +393,7 @@ Partial Class Customers
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -407,7 +405,6 @@ Partial Class Customers
     Friend WithEvents editBtn As PictureBox
     Friend WithEvents deleteBtn As PictureBox
     Friend WithEvents searchBtn As PictureBox
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents stockCreatedDate As Label
     Friend WithEvents stockType_view_drop As ComboBox
     Friend WithEvents stockID_view As Label
@@ -427,4 +424,5 @@ Partial Class Customers
     Private WithEvents pictureBox6 As PictureBox
     Private WithEvents TextBox1 As TextBox
     Private WithEvents TextBox2 As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
